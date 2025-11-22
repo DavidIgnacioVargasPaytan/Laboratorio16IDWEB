@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 22</title>
+</head>
+<body>
+    <h2>Ejercicio 22</h2>
+    
+    <div id="formularioContainer">
+        <h3>Crear / Actualizar Perfil</h3>
+        <form id="formularioPerfil">
+            <input type="text" id="inputNombre" placeholder="Nombre" required><br><br>
+            <input type="number" id="inputEdad" placeholder="Edad" required min="1"><br><br>
+            <input type="text" id="inputPais" placeholder="País" required><br><br>
+            <button type="submit">Guardar Perfil</button>
+        </form>
+    </div>
+
+    <div id="perfilGuardado" style="border: 1px solid #0056b3; padding: 15px; margin-top: 20px; display: none;">
+        <h3>Mi Perfil Guardado</h3>
+        <p><strong>Nombre:</strong> <span id="displayPerfilNombre"></span></p>
+        <p><strong>Edad:</strong> <span id="displayPerfilEdad"></span></p>
+        <p><strong>País:</strong> <span id="displayPerfilPais"></span></p>
+    </div>
+    
+    <button id="btnBorrar" style="margin-top: 10px; display: none;">Borrar Perfil</button>
+
+    <script src="Ejercicio22.js"></script>
+</body>
+</html>

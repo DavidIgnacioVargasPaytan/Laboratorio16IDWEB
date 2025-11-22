@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 9</title>
+    <style>
+        .miniatura {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            object-fit: cover;
+        }
+        .miniatura:hover {
+            border-color: blue;
+        }
+        #imagenPrincipal {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #ccc;
+            margin-top: 15px;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Ejercicio 9</h2>
+
+    <div id="contenedorMiniaturas">
+        <img class="miniatura" src="https://picsum.photos/id/237/50/50" data-imagen-grande="https://picsum.photos/id/237/300/200" alt="Miniatura 1">
+        <img class="miniatura" src="https://picsum.photos/id/238/50/50" data-imagen-grande="https://picsum.photos/id/238/300/200" alt="Miniatura 2">
+        <img class="miniatura" src="https://picsum.photos/id/239/50/50" data-imagen-grande="https://picsum.photos/id/239/300/200" alt="Miniatura 3">
+    </div>
+
+    <div id="imagenPrincipal">
+        Haz clic en una miniatura
+    </div>
+
+    <script src="Ejercicio09.js"></script>
+</body>
+</html>

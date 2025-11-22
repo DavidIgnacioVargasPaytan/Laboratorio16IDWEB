@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 12</title>
+    <style>
+        #cuadrado {
+            width: 50px;
+            height: 50px;
+            background-color: darkblue;
+            position: relative; 
+            transition: all 0.5s ease-out;
+            left: 0;
+        }
+
+        @keyframes slide {
+            from { left: 0px; }
+            to { left: 300px; }
+        }
+
+        .mover {
+            animation: slide 2s forwards; 
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h2>Ejercicio 12</h2>
+    
+    <div id="cuadrado"></div>
+
+    <button id="btnMover">Mover</button>
+    <button id="btnReiniciar">Reiniciar</button>
+
+    <script src="Ejercicio12.js"></script>
+</body>
+</html>

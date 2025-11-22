@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 13</title>
+    <style>
+        table, th, td {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        .editar, .eliminar {
+            cursor: pointer;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Ejercicio 13</h2>
+
+    <h3>Añadir Usuario</h3>
+    <form id="formularioUsuario">
+        <input type="hidden" id="userId" value="">
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="number" id="edad" placeholder="Edad" required min="1">
+        <button type="submit" id="btnGuardar">Añadir Usuario</button>
+    </form>
+
+    <h3>Lista de Usuarios</h3>
+    <table id="tablaUsuarios">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            </tbody>
+    </table>
+
+    <script src="Ejercicio13.js"></script>
+</body>
+</html>
